@@ -168,6 +168,34 @@ final class Settings implements HasHooks
                     </div>
                 </div>
 
+                <div class="answers-card" style="margin-top:24px;">
+                    <h2><?php esc_html_e('Ecosystem integrations', 'respondo'); ?></h2>
+                    <table class="form-table" role="presentation">
+                        <tbody>
+                            <tr>
+                                <th scope="row"><?php esc_html_e('Tabvera (Product Tabs)', 'respondo'); ?></th>
+                                <td>
+                                    <?php if (class_exists('\\Tabby\\Plugin')) : ?>
+                                        <p class="description" style="color:#007017;font-weight:600;">
+                                            <?php esc_html_e('Tabvera is active. Custom global and per-product tabs are available alongside your FAQs.', 'respondo'); ?>
+                                        </p>
+                                    <?php else : ?>
+                                        <p class="description">
+                                            <?php
+                                            printf(
+                                                /* translators: %s: partner plugin name, linked to its search on the Add Plugins screen. */
+                                                esc_html__('Install %s to add custom tabs with shipping info, materials, and guides alongside your FAQ tab.', 'respondo'),
+                                                '<a href="' . esc_url(admin_url('plugin-install.php?s=' . rawurlencode('Tabvera - Product Tabs for WooCommerce') . '&tab=search&type=term')) . '">' . esc_html('Tabvera - Product Tabs for WooCommerce') . '</a>'
+                                            );
+                                            ?>
+                                        </p>
+                                    <?php endif; ?>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <?php submit_button(); ?>
             </form>
 
