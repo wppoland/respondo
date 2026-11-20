@@ -29,7 +29,8 @@ final class FaqRepeater
             <div class="answers-repeater__rows" data-answers-rows>
                 <?php
                 if ($items === []) {
-                    self::renderRow('__INDEX__', ['question' => '', 'answer' => ''], $fieldName, true);
+                    // A real, editable row: the template flag would disable it, and only cloned rows get enabled.
+                    self::renderRow('0', ['question' => '', 'answer' => ''], $fieldName, false);
                 } else {
                     foreach ($items as $index => $item) {
                         self::renderRow((string) $index, $item, $fieldName, false);
