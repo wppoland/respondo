@@ -112,9 +112,9 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == Screenshots ==
 
-1. The FAQ accordion on a product page.
-2. The per-product FAQs tab in the product data panel.
-3. The Respondo settings screen under WooCommerce.
+1. FAQs tab with an accordion of questions on a product page.
+2. Settings under WooCommerce > Respondo: tab title and a preview of the tabs.
+3. Product FAQs on a phone.
 
 == External Services ==
 
