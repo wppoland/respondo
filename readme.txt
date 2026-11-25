@@ -4,7 +4,7 @@ Tags: woocommerce, faq, product faq, accordion
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -130,6 +130,9 @@ in `answers_db_version`). Nothing is sent off-site, and the plugin sends no emai
 Respondo is fully translatable and ships the `respondo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.7 =
+* Plugins list shows a shortcut to the settings screen.
 
 = 1.1.6 =
 * Fixed: on a product with no FAQs yet, the first question and answer fields in the FAQs tab were greyed out and could not be typed into. They are now editable straight away, with or without JavaScript.
