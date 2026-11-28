@@ -135,8 +135,13 @@
 	background: #fff;
 }
 
-.answers-repeater__label {
+.answers-repeater .answers-repeater__label {
+	/* Beats WooCommerce's .woocommerce_options_panel label (float, -150px margin, 150px width). */
 	display: block;
+	float: none;
+	width: auto;
+	margin: 0;
+	padding: 0;
 }
 
 .answers-repeater__label-text {
